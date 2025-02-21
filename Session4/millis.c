@@ -65,7 +65,7 @@ int main(){
     // as the clock source is 16 mhz and by using prescaler of 0 it counts 1 ms in 16000 cycles
     TimerLoadSet(TIMER0_BASE,TIMER_A,16000);
 
-    // Set the prescaler value to 255
+    // Set the prescaler value to 0
     TimerPrescaleSet(TIMER0_BASE, TIMER_A, 0);
 
     // Enable Timer0A
