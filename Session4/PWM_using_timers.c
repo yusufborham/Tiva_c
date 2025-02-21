@@ -16,7 +16,7 @@ void PWM();
 float duty_cycle = 0.9 ;
 int frequency = 50 ;
 int main(){
-    // Set the clocking to run directly from the crystal at 50MHz
+    // Set the clocking to run directly from the crystal at 16MHz
     SysCtlClockSet(SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ | SYSCTL_USE_OSC | SYSCTL_SYSDIV_1);
 
     // disable the master interrupt globally

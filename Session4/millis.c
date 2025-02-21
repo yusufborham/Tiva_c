@@ -17,7 +17,7 @@ void Handler();
 volatile unsigned long millisCount = 0;
 
 int main(){
-    // Set the clocking to run directly from the crystal at 50MHz
+    // Set the clocking to run directly from the crystal at 16MHz
     SysCtlClockSet(SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ | SYSCTL_USE_OSC | SYSCTL_SYSDIV_1);
 
     // disable the master interrupt globally
